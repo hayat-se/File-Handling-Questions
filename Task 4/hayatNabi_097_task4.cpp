@@ -33,6 +33,11 @@ int main()
             cout<<"Data Store Successfuly ....\n";
             cout <<"\nDo You want to Add Another Student Data (Y/N): ";
             cin>>ch;
+            if(ch == 'N' || ch == 'n'){
+                cout<<"\nThanks for Entering Data ❤\n";
+                cout<<"Exiting........\n";
+                return 0;
+            }
             cin.ignore();
         }while(ch == 'Y' || 'y');
     }
